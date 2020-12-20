@@ -32,17 +32,17 @@ body {
     position: relative;
 }
 
-.logo-box {
+.header__logo-box {
     position: absolute;
     left: 4rem;
     top: 4rem;
 }
 
-.logo {
+/* .header__logo {
     height: 3.5rem;
-}
+} */
 
-.text-box {
+.header__text-box {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -56,7 +56,7 @@ body {
     margin-bottom: 6rem;
 }
 
-.heading-primary-main {
+.heading-primary--main {
     display: block;
     font-size: 6rem;
     font-weight: 400;
@@ -64,7 +64,7 @@ body {
     padding-left: 2.5rem;
 }
 
-.heading-primary-sub {
+.heading-primary--sub {
     display: block;
     font-size: 2rem;
     font-weight: 700;
@@ -72,12 +72,12 @@ body {
 }
 
 /* animation */
-.heading-primary-main {
+.heading-primary--main {
     animation-name: moveInLeft;
     animation-duration: 5s;
     animation-timing-function: ease-out;
 }
-.heading-primary-sub {
+.heading-primary--sub {
     animation-name: moveInRight;
     animation-duration: 5s;
     animation-timing-function: ease-out;
@@ -129,8 +129,6 @@ body {
 
 .btn:link,
 .btn:visited {
-    animation-name: moveInOut;
-    animation-duration: 5s;
     animation-timing-function: ease-out;
     letter-spacing: 3px;
     font-weight: 400;
@@ -154,6 +152,11 @@ body {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
-.btn-white {
+.btn--white {
     color: #fff;
+}
+
+.btn--animated {
+    animation-name: moveInOut;
+    animation-duration: 5s;
 }
