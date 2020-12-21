@@ -1,0 +1,35 @@
+.btn {
+    &:link,
+    &:visited {
+        animation-timing-function: ease-out;
+        letter-spacing: 3px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all 0.5s;
+        position: relative;
+    }
+
+    &:hover {
+        transform: translateY(-0.3rem);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    &:active {
+        transform: translateY(-0.1rem);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    }
+
+    &--white {
+        color: $color-white;
+    }
+
+    &--animated {
+        animation-name: moveInOut;
+        animation-duration: 5s;
+    }
+}
