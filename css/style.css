@@ -96,6 +96,9 @@ body {
     transform: scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
+.u-center-text {
+  text-align: center; }
+
 .section-about {
   background-color: #f7f7f7;
   padding: 25rem 0;
