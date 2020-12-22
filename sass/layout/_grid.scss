@@ -8,8 +8,6 @@
     // which is the width of the parent element
     // body element
 
-    background-color: $grid-background-color;
-
     //center block inside another block
     margin: 0 auto;
 
@@ -20,7 +18,6 @@
 
     // Attribute selector all class start with "col-"
     [class^='col-'] {
-        background-color: orangered;
         float: left;
 
         &:not(:last-child) {
@@ -36,7 +33,6 @@
 
     .col-1-of-3 {
         width: calc((100% - #{$gutter-horizontal * 2}) / 3);
-        background-color: orangered;
     }
 
     .col-2-of-3 {
