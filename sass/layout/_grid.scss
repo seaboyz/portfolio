@@ -1,4 +1,7 @@
 .row {
+    // clear fix height collpase
+    @include clearfix;
+
     max-width: $grid-width; // if there is enough space,
     // width is 114rem(1140px)
     // if not, width is 100% of what it can be
