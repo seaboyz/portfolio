@@ -4,7 +4,6 @@ body {
     font-size: 1.6rem;
     line-height: 1.7;
     color: $color-grey-dark;
-    
 }
 
 .heading-primary {
@@ -37,5 +36,22 @@ body {
         animation-name: moveInRight;
         animation-duration: 5s;
         animation-timing-function: ease-out;
+    }
+}
+
+.heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+    display: inline-block;
+    background: linear-gradient(to top, #355b7d89, #6c5b7b, #c06c84);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all 1s;
+
+    &:hover {
+        transform: /* skewX(10deg) skewY(10deg) */ scale(1.1);
+        text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
     }
 }

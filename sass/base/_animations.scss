@@ -42,3 +42,10 @@
     100% {
     }
 }
+
+@keyframes changeColor {
+    0% {
+        transform: translate(-1rem);
+        box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    }
+}
