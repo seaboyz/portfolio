@@ -1,7 +1,7 @@
 body {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    font-size: 1.6rem;
+    font-size: $default-font-size;
     line-height: 1.7;
     color: $color-grey-dark;
 }
@@ -48,7 +48,7 @@ body {
         font-weight: 700;
         letter-spacing: 0.5rem;
         margin-bottom: 2rem;
-        background: linear-gradient(to top, #355b7d89, #6c5b7b, #c06c84);
+        background: linear-gradient(to bottom, $color-primary, $color-primary);
         -webkit-background-clip: text;
         color: transparent;
         transition: all 1s;
@@ -65,20 +65,22 @@ body {
         font-weight: 700;
         letter-spacing: 0.65rem;
         line-height: 2;
-        color: $color-grey-light;
+        color: $color-primary;
     }
 }
 
 .heading-tertiary {
-    font-size: 1.6rem;
+    font-size: $default-font-size;
     font-weight: 700;
     text-transform: uppercase;
+    color: $color-primary;
 }
 
 .paragraph {
-    font-size: 1.6rem;
+    font-size: $default-font-size;
 
     &:not(:last-child) {
         margin-bottom: 3rem;
     }
+    color: $color-primary;
 }

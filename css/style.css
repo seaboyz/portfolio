@@ -90,7 +90,7 @@ body {
     font-weight: 700;
     letter-spacing: 0.5rem;
     margin-bottom: 2rem;
-    background: linear-gradient(to top, #355b7d89, #6c5b7b, #c06c84);
+    background: linear-gradient(to bottom, #636fa4, #636fa4);
     -webkit-background-clip: text;
     color: transparent;
     transition: all 1s; }
@@ -103,15 +103,17 @@ body {
     font-weight: 700;
     letter-spacing: 0.65rem;
     line-height: 2;
-    color: #c9bdbd; }
+    color: #636fa4; }
 
 .heading-tertiary {
   font-size: 1.6rem;
   font-weight: 700;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #636fa4; }
 
 .paragraph {
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  color: #636fa4; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
@@ -156,6 +158,20 @@ body {
 .btn--animated {
   animation-name: moveInOut;
   animation-duration: 5s; }
+
+.btn-text:link, .btn-text:visited {
+  color: #636fa4;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #636fa4;
+  padding: 3px;
+  transition: all 1s; }
+
+.btn-text:hover {
+  background-color: #636fa4;
+  color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px); }
 
 .header {
   height: 95vh;
