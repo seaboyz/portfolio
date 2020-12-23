@@ -105,11 +105,24 @@ body {
     line-height: 2;
     color: #c9bdbd; }
 
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.paragraph {
+  font-size: 1.6rem; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
 .u-center-text {
   text-align: center; }
 
-.u-margin-bottom-8 {
+.u-margin-bottom-lg {
   margin-bottom: 8rem; }
+
+.u-margin-bottom-sm {
+  margin-bottom: 1.5rem; }
 
 .section-about {
   background-color: #f7f7f7;
