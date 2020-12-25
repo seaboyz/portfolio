@@ -43,13 +43,19 @@ body {
     text-transform: uppercase;
 
     &--main {
-        display: block;
         font-size: 3.5rem;
         font-weight: 700;
         letter-spacing: 0.5rem;
         margin-bottom: 2rem;
-        background: linear-gradient(to bottom, $color-primary, $color-primary);
+        // text background gradient
+        display: inline-block;
+        background: linear-gradient(
+            to bottom,
+            $color-primary,
+            $color-secondary
+        );
         -webkit-background-clip: text;
+        background-clip: text;
         color: transparent;
         transition: all 1s;
 

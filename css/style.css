@@ -85,13 +85,14 @@ body {
 .heading-secondary {
   text-transform: uppercase; }
   .heading-secondary--main {
-    display: block;
     font-size: 3.5rem;
     font-weight: 700;
     letter-spacing: 0.5rem;
     margin-bottom: 2rem;
-    background: linear-gradient(to bottom, #636fa4, #636fa4);
+    display: inline-block;
+    background: linear-gradient(to bottom, #636fa4, #e8cbc0);
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
     transition: all 1s; }
     .heading-secondary--main:hover {
@@ -232,15 +233,31 @@ body {
     transform: scale(0.9); }
 
 .feature-box {
-  color: #fff;
   font-size: 1.5rem;
   padding: 2.5rem;
   text-align: center;
   border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(255, 255, 255, 0.15); }
+  box-shadow: 0 1.5rem 4rem rgba(255, 255, 255, 0.15);
+  transition: all 1s; }
   .feature-box__icon {
     font-size: 6rem;
-    margin-bottom: 0.5rem; }
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    background: linear-gradient(to bottom, #636fa4, #e8cbc0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; }
+  .feature-box__heading {
+    background: linear-gradient(to bottom, #636fa4, #e8cbc0);
+    -webkit-background-clip: text;
+    background-clip: text; }
+  .feature-box__text {
+    background: linear-gradient(to bottom, #636fa4, #e8cbc0);
+    -webkit-background-clip: text;
+    background-clip: text; }
+  .feature-box:hover {
+    transform: translateY(-2rem) scale(1.1);
+    background-color: rgba(255, 255, 255, 0.15); }
 
 .header {
   height: 95vh;

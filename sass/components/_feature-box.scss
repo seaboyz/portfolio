@@ -1,16 +1,47 @@
 .feature-box {
-    color: $color-white;
     font-size: 1.5rem;
     padding: 2.5rem;
     text-align: center;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-white, 0.15);
+    transition: all 1s;
 
     &__icon {
         font-size: 6rem;
         margin-bottom: 0.5rem;
+        display: inline-block;
+        background: linear-gradient(
+            to bottom,
+            $color-primary,
+            $color-secondary
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+
+    &__heading {
+        background: linear-gradient(
+            to bottom,
+            $color-primary,
+            $color-secondary
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
     }
 
     &__text {
+        background: linear-gradient(
+            to bottom,
+            $color-primary,
+            $color-secondary
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+
+    &:hover {
+        transform: translateY(-2rem) scale(1.1);
+        background-color: rgba($color-white, 0.15);
     }
 }
