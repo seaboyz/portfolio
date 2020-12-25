@@ -8,8 +8,17 @@
 
 .section-features {
     height: 95vh;
-    clip-path: polygon(0 0, 100% 20vh, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 
+    transform: skewy(-7deg);
+    // skew back the child
+    & > * {
+        transform: skewy(7deg) translate(-50%, -50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+    }
     // padding: 20rem 0;
 
     margin-top: -20vh;
@@ -33,11 +42,11 @@
         }
     }
 
-    &__cards {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-    }
+    // &__cards {
+    //     position: absolute;
+    //     top: 50%;
+    //     left: 50%;
+    //     transform: translate(-50%, -50%);
+    //     width: 100%;
+    // }
 }

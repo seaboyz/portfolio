@@ -134,9 +134,16 @@ body {
 
 .section-features {
   height: 95vh;
-  clip-path: polygon(0 0, 100% 20vh, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  transform: skewy(-7deg);
   margin-top: -20vh;
   position: relative; }
+  .section-features > * {
+    transform: skewy(7deg) translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%; }
   .section-features__bgimage {
     background: url("https://unsplash.com/photos/c9OCWLka764/download?force=true&w=2400");
     background-size: cover;
@@ -150,12 +157,6 @@ body {
       background: inherit;
       z-index: -1;
       filter: blur(4px); }
-  .section-features__cards {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%; }
 
 .btn:link, .btn:visited {
   animation-timing-function: ease-out;
