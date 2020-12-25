@@ -149,6 +149,12 @@ body {
       background: inherit;
       z-index: -1;
       filter: blur(4px); }
+  .section-features__cards {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; }
 
 .btn:link, .btn:visited {
   animation-timing-function: ease-out;
@@ -224,6 +230,17 @@ body {
       outline: 1.5rem solid rgba(99, 111, 164, 0.4); }
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.9); }
+
+.feature-box {
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(255, 255, 255, 0.15); }
+  .feature-box__icon {
+    font-size: 6rem;
+    margin-bottom: 0.5rem; }
 
 .header {
   height: 95vh;
