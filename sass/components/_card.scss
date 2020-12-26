@@ -1,13 +1,58 @@
 .card {
     perspective: 150rem;
+    position: relative;
+    // set height same as children element
+    height: 50rem;
 
     &__side {
-        background-color: orangered;
         height: 50rem;
-        transition: all 2s;
+        color: $color-white;
+        transition: all 2s ease;
+        // will cause parent element callpase
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        // corner radius
+        border-radius: 3px;
+        // hide image sharp corners
+        overflow: hidden;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
+
+        &--front {
+            background-color: $color-white;
+        }
+
+        &--back {
+            transform: rotateY(-180deg);
+
+            &-1 {
+                background-image: linear-gradient(
+                    to right bottom,
+                    #2193b0,
+                    #6dd5ed
+                );
+            }
+        }
     }
 
-    &:hover &__side {
+    &:hover &__side--front {
         transform: rotateY(180deg);
+    }
+
+    &:hover &__side--back {
+        transform: rotateY(0deg);
+    }
+
+    &__picture {
+        background-size: cover;
+        height: 23rem;
+        background-blend-mode: screen;
+
+        &--1 {
+            background-image: url('https://unsplash.com/photos/uWpggIb3iHs/download?force=true&w=640'),
+                linear-gradient(to right bottom, #2193b0, #6dd5ed);
+        }
     }
 }

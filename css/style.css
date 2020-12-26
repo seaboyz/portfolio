@@ -159,8 +159,9 @@ body {
       filter: blur(4px); }
 
 .section-journey {
-  height: 95vh;
-  margin-top: 10rem; }
+  background-color: #f7f7f7;
+  margin-top: -5rem;
+  padding: 25rem 0; }
 
 .btn:link, .btn:visited {
   animation-timing-function: ease-out;
@@ -265,13 +266,37 @@ body {
     background-color: rgba(255, 255, 255, 0.15); }
 
 .card {
-  perspective: 150rem; }
+  perspective: 150rem;
+  position: relative;
+  height: 50rem; }
   .card__side {
-    background-color: orangered;
     height: 50rem;
-    transition: all 2s; }
-  .card:hover .card__side {
+    color: #fff;
+    transition: all 2s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }
+    .card__side--front {
+      background-color: #fff; }
+    .card__side--back {
+      transform: rotateY(-180deg); }
+      .card__side--back-1 {
+        background-image: linear-gradient(to right bottom, #2193b0, #6dd5ed); }
+  .card:hover .card__side--front {
     transform: rotateY(180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0deg); }
+  .card__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen; }
+    .card__picture--1 {
+      background-image: url("https://unsplash.com/photos/uWpggIb3iHs/download?force=true&w=640"), linear-gradient(to right bottom, #2193b0, #6dd5ed); }
 
 .header {
   height: 95vh;
