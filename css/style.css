@@ -158,6 +158,10 @@ body {
       z-index: -1;
       filter: blur(4px); }
 
+.section-journey {
+  height: 95vh;
+  margin-top: 10rem; }
+
 .btn:link, .btn:visited {
   animation-timing-function: ease-out;
   letter-spacing: 3px;
@@ -259,6 +263,15 @@ body {
   .feature-box:hover {
     transform: translateY(-2rem) scale(1.1);
     background-color: rgba(255, 255, 255, 0.15); }
+
+.card {
+  perspective: 150rem; }
+  .card__side {
+    background-color: orangered;
+    height: 50rem;
+    transition: all 2s; }
+  .card:hover .card__side {
+    transform: rotateY(180deg); }
 
 .header {
   height: 95vh;
