@@ -49,11 +49,7 @@ body {
         margin-bottom: 2rem;
         // text background gradient
         display: inline-block;
-        background: linear-gradient(
-            to bottom,
-            $color-primary,
-            $color-secondary
-        );
+        background: linear-gradient(to right, #47626d80, #2c536477);
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
