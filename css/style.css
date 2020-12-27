@@ -272,7 +272,7 @@ body {
   .card__side {
     height: 50rem;
     color: #fff;
-    transition: all 2s ease;
+    transition: all 1s ease;
     position: absolute;
     top: 0;
     left: 0;
@@ -285,7 +285,7 @@ body {
       background-color: #fff; }
     .card__side--back {
       transform: rotateY(-180deg); }
-      .card__side--back-1 {
+      .card__side--back--1 {
         background-image: linear-gradient(to right bottom, #2193b0, #6dd5ed); }
   .card:hover .card__side--front {
     transform: rotateY(180deg); }
@@ -324,6 +324,22 @@ body {
       padding: 1rem; }
       .card__details ul li:not(:last-child) {
         border-bottom: 1px solid lightgray; }
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 90%;
+    text-align: center; }
+  .card__price-box {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 8rem; }
+  .card__price-value {
+    font-size: 6rem;
+    font-weight: 100; }
+  .card .btn {
+    color: #fff; }
 
 .header {
   height: 95vh;
